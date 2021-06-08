@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { Alert, Spinner } from "react-bootstrap"
 
 import AddComment from "../AddComment/AddComment"
@@ -11,9 +11,8 @@ const TOKEN =
 const CommentArea = props => {
   const [comments, setComments] = useState([])
   const [isLoading, setIsLoading] = useState(false)
-  const isMounted = useRef(false)
 
-  const fetchComments = async () => {
+  const fetchComments = useCallback(async () => {
     setIsLoading(true)
     const asin = props.book.asin
     const response = await fetch(URL + asin, {
@@ -23,15 +22,11 @@ const CommentArea = props => {
     })
     setComments(await response.json())
     setIsLoading(false)
-  }
+  }, [props.book.asin])
 
   useEffect(() => {
     fetchComments()
-  }, [])
-
-  useEffect(() => {
-    isMounted.current ? fetchComments() : (isMounted.current = true)
-  }, [props.book.asin])
+  }, [fetchComments])
 
   return (
     <>

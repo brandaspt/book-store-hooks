@@ -1,5 +1,6 @@
 import { Component } from "react"
 import { Nav, Navbar, Container } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import rbsLogo from "../../rbsLogo.svg"
 
 class MyNav extends Component {
@@ -12,11 +13,20 @@ class MyNav extends Component {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#">Home</Nav.Link>
-              <Nav.Link href="#">About</Nav.Link>
-              <Nav.Link href="#">Browse</Nav.Link>
+            <Nav>
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+              <Link to="/about" className="nav-link">
+                About
+              </Link>
+              <Link to="/browse" className="nav-link">
+                Browse
+              </Link>
             </Nav>
+            <Link to="/register" className="nav-link btn btn-sm btn-primary ml-auto d-inline-block">
+              Register
+            </Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>

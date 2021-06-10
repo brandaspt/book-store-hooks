@@ -1,12 +1,10 @@
 import { useState, useEffect, useCallback } from "react"
 import { Alert, Spinner } from "react-bootstrap"
 
+import { URL, TOKEN } from "../../data/auth"
+
 import AddComment from "../AddComment/AddComment"
 import CommentList from "../CommentList/CommentList"
-
-const URL = "https://striveschool-api.herokuapp.com/api/comments/"
-const TOKEN =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlNTk2NGNlYWY0ODAwMTVjOTE5MzYiLCJpYXQiOjE2MjIwMzg4ODQsImV4cCI6MTYyMzI0ODQ4NH0.kcSw_K1mFlUoMMV0Ht3yenaWNHGapnpFfnPfWPee6cU"
 
 const CommentArea = props => {
   const [comments, setComments] = useState([])

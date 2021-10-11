@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/book-store-hooks/static/css/main.4a812d7b.chunk.css",
+    "main.js": "/book-store-hooks/static/js/main.411dd14e.chunk.js",
+    "main.js.map": "/book-store-hooks/static/js/main.411dd14e.chunk.js.map",
+    "runtime-main.js": "/book-store-hooks/static/js/runtime-main.5da719e6.js",
+    "runtime-main.js.map": "/book-store-hooks/static/js/runtime-main.5da719e6.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/book-store-hooks/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.159f6ca0.chunk.js": "/book-store-hooks/static/js/2.159f6ca0.chunk.js",
+    "static/js/2.159f6ca0.chunk.js.map": "/book-store-hooks/static/js/2.159f6ca0.chunk.js.map",
+    "index.html": "/book-store-hooks/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/book-store-hooks/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.4a812d7b.chunk.css.map": "/book-store-hooks/static/css/main.4a812d7b.chunk.css.map",
+    "static/js/2.159f6ca0.chunk.js.LICENSE.txt": "/book-store-hooks/static/js/2.159f6ca0.chunk.js.LICENSE.txt",
+    "static/media/rbsLogo.958e7d84.svg": "/book-store-hooks/static/media/rbsLogo.958e7d84.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5da719e6.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.159f6ca0.chunk.js",
+    "static/css/main.4a812d7b.chunk.css",
+    "static/js/main.411dd14e.chunk.js"
+  ]
+}
